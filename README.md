@@ -1,12 +1,12 @@
 # EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER
 
-### Aim:
+## AIM:
 To generate a PWM wave at the timer pin output and  simuate it on  proteus using an virtual oscilloscope  
 
-### Components required:
+## COMPONENTS REQUIRED:
 STM32 CUBE IDE, Proteus 8 simulator .
 
-### Theory:
+## THEORY:
 
 The timer modules can operate a variety of modes one of which is the PWM mode. Where the timer gets clocked from an internal source and counts up to the auto-reload register value, then the output channel pin is driven HIGH. And it remains until the timer counts reach the CCRx register value, the match event causes the output channel pin to be driven LOW. And it remains until the timer counts up to the auto-reload register value, and so on.
 
@@ -44,7 +44,7 @@ In normal settings, assuming you’re using the timer module in PWM mode and gen
 
 
 
-## Procedure:
+## PROCEDURE:
 Step1: Open CubeMX & Create New Project
  ![image](https://user-images.githubusercontent.com/36288975/226189166-ac10578c-c059-40e7-8b80-9f84f64bf088.png)
 
@@ -95,7 +95,7 @@ Step14. click on debug and simulate using simulation as shown below
 
   
 
-## STM 32 CUBE PROGRAM :
+## STM 32 CUBE PROGRAM:
 
 ```c
 #include "main.h"
@@ -235,7 +235,7 @@ void assert_failed(uint8_t *file, uint32_t line)
  ![image](https://github.com/Karthikeyan21001828/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427303/214291c3-5bea-467f-8b08-5eb7e075c03d)
 
 
-## DUTY CYCLE AND FREQUENCY CALCULATION 
+## DUTY CYCLE AND FREQUENCY CALCULATION:
 FOR PULSE AT 500
 ![image](https://github.com/Karthikeyan21001828/EXPERIMENT--07-SQUARE-WAVE-GENERATION-AT-THE-OUTPUT-PIN-USING-TIMER/assets/93427303/9639d67a-5259-40c6-a629-2b20a78ca0b3)
 
@@ -272,7 +272,7 @@ TOTAL TIME = 0.38 + 0.05 = 0.43
 FREQUENCY = 1/(TOTAL TIME) = 1 / 0.43 = 2.32
 
 
-## Result :
+## RESULT:
 A PWM Signal is generated using the following frequency and various duty cycles are simulated 
 
 
